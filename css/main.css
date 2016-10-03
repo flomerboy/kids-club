@@ -17,7 +17,7 @@ html {
 }
 
 body {
-    padding-top: 10%;
+    padding: 10%;
     max-width: 450px;
     margin: auto;
     color: #FFFFFF;
@@ -35,10 +35,8 @@ p.u-mono {
     font-style:normal; 
 }
 a {
-    font-weight:bold; 
     color: #FFFFFF;
     text-decoration: none;
-    border-bottom: 1px solid #FFFFFF;
     padding-bottom: 2px;
 }
 button  {
@@ -51,6 +49,8 @@ button  {
     margin-right: 1em;
     border-radius: 10px;
 }
+
+button:focus {outline:0;}
 
 /*
  * Remove text-shadow in selection highlight:
@@ -133,7 +133,12 @@ textarea {
 
 
 
-
+ @media screen and (orientation:portrait) {
+    button{
+        display: block;
+        margin-bottom: 1em;
+    }
+ }
 
 
 
